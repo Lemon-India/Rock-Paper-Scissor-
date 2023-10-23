@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" type="img/jpg" href="crison.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap');
+    </style>
+    </head>
+    <body>
+      
+      <header>
+  <h2>ROCK PAPER SCISSORS GAME</h2>
+     </header>
 
-<title>RPS GAME</title>
-</head>
-<body>
-    
-    <h1 class="title" onclick="this.innerHTML = 'WELCOME TO PIHU`S RPS GAME'  " ><strong>ROCK PAPER SCISSOR GAME</strong></h1>
-    <div class="status">
-    <h3>You:</h3>
-    <h5 class="player"><em>Scissor</em></h5>
-    <h3>Aishik:</h3>
-    <h5 class="computer"><em>Scissor</em></h5>
-    </div>
-    <div class="won">
-        <h2 class="text">HELLO WORLD</h2>
-    </div>
-    <div class="buttons">
-        <button onclick="rock()">Rock</button>
-        <button onclick="paper()">Paper</button>
-        <button onclick="Scissor()">Scissor</button>
-        
-    </div>
-    <div class="points">
-        <strong class="one">YOU</strong>
-        <strong class="two">AISHIK</strong>
-         <em class="three">0</em>
-         <em class="four">0</em>  
-          </table>
-    </div>
-
-<div class="ball">
-    <span onclick="this.style.animationName = '' "></span>
-    <span class="f"></span>
-<span class="a"></span>
-<span class="b"></span>
-<span class="c"></span>
-<span class="e"></span>
-<span></span>
+<div class="score-board">
+<div class="user-score">You</div>
+<span id="user_score">0</span>
+:<span id="comp_score">0</span>
+<div class="comp-score">comp</div>
 </div>
 
-    <footer><em>MADE BY <a href="#">@CRISON</a><SUP>HEWS</SUP> <STRONG>FOR ABHISRI</STRONG></em></footer>
-
-</body>
-
-<script src="main.js">
-</script>
-</html>
+<div class="result"id="result">
+  <p>START</p>
+ </div>
+  
+   <div class="select">
+    <h2 id="rock"class="selections">✊</h2>
+    <h2 id="paper"class="selections">📰</.h2>
+    <h2 id="scissors"class="selections">✂️</h2>
+    </div>
+    
+    <div class="hint">
+      <p>Make you move </p>
+      </div>
+      
+     <div id="one"  class="one">
+       <p>+1</p>
+     </div> 
+     
+     
+    
+      
+      <script src="main.js"></script>
+      </body>
+      </html>
