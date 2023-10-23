@@ -1,0 +1,227 @@
+body{
+    margin:2px;
+    padding:2px ;
+    background-color: white;
+background: linear-gradient(40deg,#222,#555,#000);
+
+
+
+}
+
+.title{
+    top:2px;
+    width:100%;
+    background: linear-gradient(45deg,crimson,rgb(110, 5, 32));
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    border: 4px groove grey;
+    border-radius: 1rem;
+    text-shadow: black 4px 6px 10px;
+    font-family: 'Creepster', cursive;
+    box-shadow: #555 3px 3px 5px;
+   
+}
+h2:hover{
+    content: "hello";
+}
+h3{
+font-family: cursive;
+text-shadow: orangered 2px 2px 5px;
+margin-left: 4%;
+margin-bottom: 5%;
+padding-top: 0px;
+font-size: 4vh;
+animation: shine 2s linear infinite reverse;
+}
+ h5{
+
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    color: black;
+    margin-right: 3%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: rgb(102, 255,0) 2px 3px  2px;
+    font-size: 5vh;
+    animation: shine 2s linear infinite reverse;
+}
+.status{
+    display: grid;
+  grid-template-columns: repeat(2,100px);
+  grid-template-rows: repeat(2,70px);
+  grid-gap: 5px;
+  height: 180px;
+    
+    background-color: black;
+    
+    overflow: hidden;
+    border-radius: 30px;
+    
+}
+
+.won{
+    display:flex;
+    justify-content: center;
+    text-shadow: lightgreen 5px 6px 5px;
+    animation: winner 4s linear infinite alternate;
+    
+}
+.text{
+    font-size: 6vh;
+    color: goldenrod;
+    padding: 0px;
+    margin: 5%;
+    font-family: 'Press Start 2P', cursive;
+    border-left: dashed 2px lightsalmon;
+    border-right: dashed 2px lightsalmon;
+
+}
+.buttons{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-around;
+  overflow: hidden;
+
+}
+button{
+    background-color: turquoise;
+    height: 60px;
+    width:120px;
+    font-size: 29px;
+    border: cyan 5px groove ;
+    border-radius: 10px;
+    box-shadow: rgba(2, 11, 92, 0.233) 3px 3px 3px;
+    font-weight: bolder;
+    color:cyan;
+    text-shadow: #000 3px 3px 4px;
+   
+    overflow: hidden;
+    animation: out 2s linear infinite alternate;
+}
+.points{
+    margin-top: 50px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-areas: "one two" "three four";
+    border: 4px  rgb(255, 0, 234) groove;
+    font-size: 3vh;
+}
+.one{
+    grid-area: "one";
+    border: 2px  red solid;
+    display: flex;
+    justify-content: center;
+    color:sandybrown;
+}
+.two{
+    grid-area: "two";
+    border: 2px  red solid;
+    display: flex;
+    justify-content: center;
+    color:sandybrown;
+}
+.three{
+    grid-area: "three";
+    border: 5px  rgb(230, 226, 35) solid;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    animation: glow 3s linear infinite ;
+    color: #005;
+    background-color: rgba(245, 250,255, 0.6);
+}
+.four{
+    grid-area: "four";
+    border: 5px  rgb(20, 240, 240) solid;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    
+    color: #005;
+    animation: glow 3s linear infinite ;
+    background-color: rgba(245, 250,255, 0.6);
+}
+footer{
+    margin-top: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px wheat groove;
+    border-radius: 30px;
+    opacity: 0.8;
+    color: red;
+
+}
+footer a{
+    margin-top: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px wheat groove;
+    border-radius: 30px;
+    opacity: 0.8;
+    color: red;
+
+}
+@keyframes glow{
+    100%{
+        opacity: 70%;
+        
+        caret-color: gold;
+    }
+}
+@keyframes shine{
+    60%{
+        opacity: 90%;
+    }
+    80%{
+        opacity: 70%;
+    }
+    100%{
+        opacity:80%;
+    }
+}
+span{
+    content: "";
+    background-color: cadetblue;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+   border-radius: 50%;
+}
+.ball{
+    display: flex;
+    justify-content: space-around;
+    animation: move 4s ease-in infinite alternate-reverse;
+}
+@keyframes move{
+ 100%{
+     transform: translateY(-90vh);
+     opacity: 10%;
+ }
+}
+
+   @keyframes winner{
+    30%{
+        z-index: -2;
+        transform: rotateX(40deg);
+    }
+    60%{
+transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateY(45deg);
+        opacity: 90%;
+        z-index: 2;
+    }
+   }
+ 
+   @keyframes out{
+    50%{
+        z-index: -2;
+        transform: translateX(1vh);
+    }
+    100%{
+        transform: translateX(-1vh);
+        opacity: 90%;
+        z-index: 2;
+    }
+   }
