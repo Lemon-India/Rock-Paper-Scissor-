@@ -4,4 +4,4 @@ link:
 https://drive.google.com/file/d/1zU2OaZw2_2ehKL5aAA2FGVQp8JyCY2Yg/view?usp=drivesdk
 
 play online:
-https://rock-paper-scissor-lilac.vercel.app/
+https://xm-rock-paper-scissor.vercel.app/
